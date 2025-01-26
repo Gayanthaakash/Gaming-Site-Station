@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Combined Stylesheet */
 
 /* Base Styles */
@@ -217,4 +218,225 @@ body {
       transition: background 0.3s ease;
     }
   }
+=======
+/* Combined Stylesheet */
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+    background-image: url(/image/8333\ \(1\).jpg);
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    position: relative;
+    height: 60px;
+  }
+  header .logo {
+    position: absolute;
+    left: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    top: 0.5rem;
+  }
+  header .logo img {
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+  
+  /* Navigation */
+  nav {
+    flex: 1;
+    text-align: center;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+  }
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  nav a:hover {
+    color: #2da2f1;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Intro Section */
+  .intro {
+    text-align: center;
+    padding: 1.5rem;
+    color: #ffffff;
+  }
+  
+  /* Sub-Sections */
+  .sub-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .sub-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Price Styling */
+  .price {
+    display: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2da2f1;
+  }
+  .card:hover .price {
+    display: block;
+  }
+  
+  /* Tables */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  .table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Gaming Section */
+  .gaming-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .gaming-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .gaming-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .gaming-card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  .gaming-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .gaming-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      padding: 1rem;
+      width: 100%;
+      list-style: none;
+      z-index: 1000;
+      max-height: 50vh;
+      overflow-y: auto;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .toggle-menu:checked + .hamburger + ul {
+      display: flex;
+    }
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+    nav ul li a {
+      padding: 0.5rem 1rem;
+      display: block;
+      transition: background 0.3s ease;
+    }
+  }
+>>>>>>> 5e822d2 (gaming site)
   

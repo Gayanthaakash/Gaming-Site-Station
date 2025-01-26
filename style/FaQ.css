@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Base Styles */
 body {
   font-family: Arial, sans-serif;
@@ -264,3 +265,271 @@ footer {
     font-size: 1.1rem; /* Slightly larger label font size */
   }
 
+=======
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+  background-image: url(../image/8333\ \(1\).jpg);
+  background-size: cover;
+}
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  position: relative;
+  height: 60px;
+
+  
+}
+
+
+/* Align the logo to the left */
+header .logo {
+  position: absolute; /* Make logo independent of the nav centering */
+  left: 1.5rem; /* Keep it aligned to the left */
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  top: 0.5rem;
+}
+
+header .logo img {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+
+/* Hamburger menu alignment */
+.hamburger {
+  display: none; /* Hidden by default for desktop */
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  position: absolute; /* Use absolute positioning */
+  right: 1.5rem; /* Align to the right with padding */
+  top: 0.5rem; /* Align vertically within the header */
+}
+
+/* Hide checkbox */
+.toggle-menu {
+  display: none;
+  
+}
+
+
+/* Center the navigation links */
+nav {
+  flex: 1; /* Take up available space */
+  text-align: center; /* Center-align the navigation block */
+}
+
+/* Navigation links styling */
+nav ul {
+  display: flex;
+  justify-content: center; /* Center the links within the nav */
+  align-items: center; /* Align links vertically */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+nav a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  
+}
+
+
+
+nav a:hover {
+  color: #2da2f1;
+}
+
+.intro {
+  color: #ffffff;
+  padding: 1.5rem;
+}
+
+/* Mobile Query Form */
+.query-form {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the top-left corner */
+  padding: 1.5rem; /* Increased padding for better spacing */
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  max-width: 100%;
+  margin: 1rem auto;
+  color: #333; /* Darker text color for better readability */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-sizing: border-box;
+}
+
+.query-form input,
+.query-form textarea {
+  width: 90%; /* Slightly smaller width for better alignment */
+  padding: 0.8rem; /* Add padding inside input fields */
+  border: 1px solid #ccc; /* Light border for input fields */
+  border-radius: 4px; /* Rounded corners for inputs */
+  font-size: 1rem; /* Ensure readable font size */
+  margin-bottom: 1rem; /* Add spacing between inputs */
+  box-sizing: border-box;
+}
+
+.query-form input:focus,
+.query-form textarea:focus {
+  border-color: #2da2f1; /* Highlight border on focus */
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 4px rgba(45, 162, 241, 0.5); /* Subtle glow effect */
+}
+
+.query-form label {
+  font-size: 1rem; /* Adjusted font size for labels */
+  margin-bottom: 0.5rem; /* Add spacing below each label */
+  color: #555;
+  align-self: flex-start; /* Align labels to the left */
+}
+
+.query-form textarea {
+  resize: none; /* Prevent resizing */
+  height: 150px; /* Default height for the textarea */
+}
+
+/* FAQ Section (Mobile Version) */
+.faq {
+  display: flex;
+  flex-direction: column; /* Default to column for mobile */
+  gap: 1rem;
+  color: #000000;
+  width: 100%; /* Full width on mobile */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.faq-item {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Query */
+.query-form h2 {
+  font-size: 1.75rem;
+  color: #353535;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Mobile Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  margin-top: auto;
+}
+
+
+
+
+
+/* Desktop and Tablet Styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide the menu by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Stay within the header boundaries */
+    top: 60px; /* Below the header */
+    right: 0;
+    background-color: #333; /* Match the header background */
+    padding: 1rem;
+    width: 100%; /* Full width of the screen */
+    list-style: none;
+    z-index: 1000; /* Ensure the menu stays above other elements */
+    max-height: 50vh; /* Limit the menu height to half the screen */
+    overflow-y: auto; /* Enable scrolling if menu items exceed the height */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+  }
+
+  .toggle-menu:checked + .hamburger + ul {
+    display: flex; /* Show the menu when the toggle is checked */
+  }
+
+  nav ul li {
+    margin: 0.5rem 0; /* Add spacing between menu items */
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block; /* Full clickable area for menu links */
+    transition: background 0.3s ease;
+  }
+
+  
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 1.5rem; /* Align to the right */
+    top: 1.5rem; /* Align within the header */
+  }
+}
+
+
+  /* FAQ Section for Larger Screens */
+  .faq {
+    display: flex;
+    flex-wrap: wrap; /* Arrange in rows */
+    justify-content: space-between;
+    padding: 2rem 1rem;
+  }
+
+  .faq-item {
+    flex: 1 1 calc(33.333% - 1rem); /* Each item takes up one-third of the space */
+    margin: 1rem 0; /* Add spacing between items */
+    box-sizing: border-box;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .query-form {
+    max-width: 800px; /* Restrict width for desktop */
+    padding: 2rem; /* Increase padding for larger screens */
+    border-radius: 12px; /* Slightly more rounded corners */
+    margin: 2rem auto; /* Center-align with larger spacing */
+  }
+
+  .query-form h2 {
+    font-size: 2rem; /* Larger heading for desktop */
+  }
+
+  .query-form input,
+  .query-form textarea {
+    width: 80%; /* Reduce width slightly for larger screens */
+    font-size: 1.1rem; /* Slightly larger font size for desktop */
+  }
+
+  .query-form label {
+    font-size: 1.1rem; /* Slightly larger label font size */
+  }
+
+>>>>>>> 5e822d2 (gaming site)
