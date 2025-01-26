@@ -1,0 +1,186 @@
+/* Base Styles for Mobile First */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+  background-image: url(../image/8333\ \(1\).jpg);
+  background-size: cover;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  position: relative;
+  height: 60px;
+}
+
+header .logo {
+  position: absolute;
+  left: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  top: 0.5rem;
+}
+
+header .logo img {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.hamburger {
+  display: block; /* Visible by default for mobile */
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+nav ul {
+  display: none; /* Hide the menu by default */
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #333;
+  padding: 1rem;
+  width: 100%;
+  list-style: none;
+  z-index: 1000;
+  max-height: 50vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-menu:checked + .hamburger + ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0.5rem 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 1rem; /* Reduced padding for mobile */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.intro h1 {
+  font-size: 1.5rem; /* Smaller font for mobile */
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1rem;
+}
+
+/* Upcoming Games Section */
+.upcoming-games {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem; /* Smaller padding for mobile */
+  justify-content: center; /* Center-align cards */
+}
+
+.game-card {
+  flex: 1 1 calc(100% - 1rem); /* Full width for mobile */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  padding: 0.5rem; /* Reduced padding for mobile */
+  box-sizing: border-box;
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.game-card h2 {
+  font-size: 1rem; /* Smaller font for mobile */
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.game-card p {
+  font-size: 0.9rem; /* Smaller font for mobile */
+  color: #555;
+}
+
+/* Footer */
+.global-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .hamburger {
+      display: none; /* Hide hamburger on desktop */
+  }
+
+  nav ul {
+      display: flex; /* Show navigation links for desktop */
+      flex-direction: row;
+      justify-content: center;
+      position: static;
+      background: none;
+      width: auto;
+      padding: 0;
+      box-shadow: none;
+  }
+
+  .intro {
+      padding: 2rem; /* Increase padding for desktop */
+  }
+
+  .intro h1 {
+      font-size: 2rem; /* Larger font for desktop */
+  }
+
+  .upcoming-games {
+      gap: 1.5rem;
+      justify-content: space-between;
+  }
+
+  .game-card {
+      flex: 1 1 calc(50% - 1.5rem); /* Two cards per row on desktop */
+      padding: 1rem; /* Increase padding for desktop */
+  }
+
+  .game-card h2 {
+      font-size: 1.2rem; /* Larger font for desktop */
+  }
+
+  .game-card p {
+      font-size: 1rem; /* Larger font for desktop */
+  }
+}

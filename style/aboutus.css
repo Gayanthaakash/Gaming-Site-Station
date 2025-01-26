@@ -1,0 +1,218 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+    background-image: url(../image/8333\ \(1\).jpg);
+    background-size: cover;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    position: relative;
+    height: 60px;
+  
+    
+  }
+  
+  /* Align the logo to the left */
+  header .logo {
+    position: absolute; /* Make logo independent of the nav centering */
+    left: 1.5rem; /* Keep it aligned to the left */
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    top: 0.5rem;
+  }
+  
+  header .logo img {
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  
+  /* Hamburger menu alignment */
+  .hamburger {
+    display: none; /* Hidden by default for desktop */
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    position: absolute; /* Use absolute positioning */
+    right: 1.5rem; /* Align to the right with padding */
+    top: 0.5rem; /* Align vertically within the header */
+  }
+  
+  /* Hide checkbox */
+  .toggle-menu {
+    display: none;
+    
+  }
+  
+  
+  /* Center the navigation links */
+  nav {
+    flex: 1; /* Take up available space */
+    text-align: center; /* Center-align the navigation block */
+  }
+  
+  /* Navigation links styling */
+  nav ul {
+    display: flex;
+    justify-content: center; /* Center the links within the nav */
+    align-items: center; /* Align links vertically */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+  }
+  nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    
+  }
+  
+  
+  
+  nav a:hover {
+    color: #2da2f1;
+  }
+/* Branch Section */
+.branch {
+    margin-bottom: 2rem;
+    padding: 0 1rem; /* Add space to left and right */
+}
+
+.branch h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.branch-content {
+  display: flex; /* Enable flexbox */
+  flex-direction: row; /* Side-by-side for desktop */
+  justify-content: space-between; /* Space between image and map */
+  align-items: center; /* Align items vertically */
+  gap: 1rem; /* Space between elements */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.branch-content img,
+.branch-content iframe {
+    width: 48%; /* Equal width for both elements */
+    height: 350px; /* Consistent height */
+    border-radius: 8px; /* Match rounded corners */
+    display: block; /* Ensure proper layout */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+
+.map{
+    width: 48%; /* Ensure both image and map are the same width */
+    height: 350px; /* Set the height to be equal for both */
+    border-radius: 8px;
+    display: block;
+
+}
+.store-details{
+    color: #ffffff;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+.hamburger {
+    display: none; /* Hidden by default for desktop */
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    position: absolute; /* Use absolute positioning */
+    right: 1.5rem; /* Align to the right with padding */
+    top: 1.5rem; /* Align vertically within the header */
+  }
+
+.store-details{
+  margin-bottom: 10px;
+}
+  .store-details h2{
+    text-align: center;
+  }
+
+  .store-details .table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@media (max-width: 768px) {
+    nav ul {
+      display: none; /* Hide the menu by default */
+      flex-direction: column; /* Stack links vertically */
+      position: absolute; /* Stay within the header boundaries */
+      top: 60px; /* Below the header */
+      right: 0;
+      background-color: #333; /* Match the header background */
+      padding: 1rem;
+      width: 100%; /* Full width of the screen */
+      list-style: none;
+      z-index: 1000; /* Ensure the menu stays above other elements */
+      max-height: 50vh; /* Limit the menu height to half the screen */
+      overflow-y: auto; /* Enable scrolling if menu items exceed the height */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    }
+  
+    .toggle-menu:checked + .hamburger + ul {
+      display: flex; /* Show the menu when the toggle is checked */
+    }
+  
+    nav ul li {
+      margin: 0.5rem 0; /* Add spacing between menu items */
+    }
+  
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      display: block; /* Full clickable area for menu links */
+      transition: background 0.3s ease;
+    }
+  
+    
+  
+    .hamburger {
+      display: block;
+      position: absolute;
+      right: 1.5rem; /* Align to the right */
+      top: 1.5rem; /* Align within the header */
+    }
+    .branch-content img,
+    .branch-content iframe {
+        height: auto; /* Adjust height to maintain aspect ratio */
+    }
+    .branch-content {
+      flex-direction: row; /* Stack content vertically on small screens */
+      align-items: normal;
+  }
+  }
+    
+
+
+    
+
+

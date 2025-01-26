@@ -1,0 +1,253 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+    background-image: url(../image/8333\ \(1\).jpg);
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+    padding-right: 0;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    position: relative;
+    height: 60px;
+  
+    
+  }
+  
+  /* Align the logo to the left */
+  header .logo {
+    position: absolute; /* Make logo independent of the nav centering */
+    left: 1.5rem; /* Keep it aligned to the left */
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    top: 0.5rem;
+  }
+  
+  header .logo img {
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  
+  /* Hamburger menu alignment */
+  .hamburger {
+    display: none; /* Hidden by default for desktop */
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    position: absolute; /* Use absolute positioning */
+    right: 1.5rem; /* Align to the right with padding */
+    top: 0.5rem; /* Align vertically within the header */
+  }
+  
+  /* Hide checkbox */
+  .toggle-menu {
+    display: none;
+    
+  }
+  
+  
+  /* Center the navigation links */
+  nav {
+    flex: 1; /* Take up available space */
+    text-align: center; /* Center-align the navigation block */
+  }
+  
+  /* Navigation links styling */
+  nav ul {
+    display: flex;
+    justify-content: center; /* Center the links within the nav */
+    align-items: center; /* Align links vertically */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+  }
+  nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    
+  }
+  
+  
+  
+  nav a:hover {
+    color: #2da2f1;
+  }
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: auto;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+}
+
+.intro h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Gaming Cards Section */
+.console-cards {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 1.5rem; /* Spacing between cards */
+    padding: 1rem; /* Padding for the section */
+    max-width: 100%; /* Limit width for larger screens */
+    margin: 0 auto; /* Center the section */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.console-card {
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+/* Price Styling */
+.price {
+    display: none; /* Hide price by default */
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2da2f1; /* Bright blue color for visibility */
+    margin-top: 1rem;
+}
+/* Show price on hover */
+.console-card:hover .price {
+    display: block; /* Show price when hovering over the card */
+    animation: fadeIn 0.3s ease-in-out; /* Optional animation */
+}
+
+
+.console-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.console-card img {
+    min-width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+}
+
+.console-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.console-card p {
+    font-size: 0.875rem;
+    color: #555;
+    line-height: 1.4;
+}
+.hamburger {
+    display: none; /* Hidden by default for desktop */
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    position: absolute; /* Use absolute positioning */
+    right: 1.5rem; /* Align to the right with padding */
+    top: 1.5rem; /* Align vertically within the header */
+  }
+
+
+  @media (max-width: 768px) {
+    nav ul {
+      display: none; /* Hide the menu by default */
+      flex-direction: column; /* Stack links vertically */
+      position: absolute; /* Stay within the header boundaries */
+      top: 60px; /* Below the header */
+      right: 0;
+      background-color: #333; /* Match the header background */
+      padding: 1rem;
+      width: 100%; /* Full width of the screen */
+      list-style: none;
+      z-index: 1000; /* Ensure the menu stays above other elements */
+      max-height: 50vh; /* Limit the menu height to half the screen */
+      overflow-y: auto; /* Enable scrolling if menu items exceed the height */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    }
+  
+    .toggle-menu:checked + .hamburger + ul {
+      display: flex; /* Show the menu when the toggle is checked */
+    }
+  
+    nav ul li {
+      margin: 0.5rem 0; /* Add spacing between menu items */
+    }
+  
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      display: block; /* Full clickable area for menu links */
+      transition: background 0.3s ease;
+    }
+  
+    
+  
+    .hamburger {
+      display: block;
+      position: absolute;
+      right: 1.5rem; /* Align to the right */
+      top: 1.5rem; /* Align within the header */
+    }
+  }
+
+  .console-cards {
+    grid-template-columns: repeat(2,1fr); /* Two columns for tablets */
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 90%;
+}
+
+.console-card {
+    width: 100%; /* Full width for grid items */
+    padding: 1.5rem;
+}
+
