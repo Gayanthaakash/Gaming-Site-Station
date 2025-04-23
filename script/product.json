@@ -1,0 +1,259 @@
+{
+    "processors": [
+      {
+        "id": "cpu-1",
+        "name": "AMD Ryzen 9 7950X3D",
+        "price":699 ,
+        "category": "processor",
+        "description": "The AMD Ryzen 9 7950X3D is a desktop processor with 16 cores, launched in January 2023, at an MSRP of $699. It is part of the Ryzen 9 lineup, using the Zen 4 (Raphael) architecture with Socket AM5. Thanks to AMD Simultaneous Multithreading (SMT) the core-count is effectively doubled, to 32 threads.",
+        "image": "image\\product\\procssors\\2505503-ryzen-9-7900x3d-og.avif"
+      },
+      {
+        "id": "cpu-2",
+        "name": "AMD Ryzen 9 9950X ",
+        "price": 548.88,
+        "category": "processor",
+        "description": " More Tools The AMD Ryzen 9 9950X is a desktop processor with 16 cores, launched in August 2024, at an MSRP of $649. It is part of the Ryzen 9 lineup, using the Zen 5 (Granite Ridge) architecture with Socket AM5. Thanks to AMD Simultaneous Multithreading (SMT) the core-count is effectively doubled, to 32 threads.",
+        "image": "image\\product\\procssors\\2613900-ryzen-9-9950x-og11-1.jpg"
+      },
+      {
+        "id": "cpu-3",
+        "name": "AMD Ryzen 5 8600G",
+        "price": 186.62,
+        "category": "processor",
+        "description": " The AMD Ryzen 5 8600G is a desktop processor with integrated Radeon 760M graphics, offering a balance of CPU and GPU performance for gaming and general use. It features 6 cores, 12 threads, and a base clock speed of 4.3 GHz, boosting up to 5.0 GHz. The processor also supports DDR5 memory, uses the AM5 socket, and is built on AMD's Zen 4 architectur",
+        "image": "image\\product\\procssors\\2505503-ryzen-5-8600g-og.webp"
+      }
+      ,
+      {
+        "id": "cpu-4",
+        "name": "AMD Ryzen 7 9700X",
+        "price": 326.99,
+        "category": "processor",
+        "description": "The AMD Ryzen 7 9700X is an 8-core, 16-thread processor based on the Zen 5 architecture, designed for Socket AM5 motherboards. It boasts a base clock of 3.8 GHz and a maximum boost clock of 5.5 GHz. The processor is unlocked for overclocking, supports DDR5-5600 memory, and features a 40 MB cache.  ",
+        "image": "image\\product\\procssors\\windows-11-bug-affects-gaming-performance-in-new-ryzen-cpus-v0-oKqnD48mKZBjFpCB.webp"
+      }
+      ,
+      {
+        "id": "cpu-5",
+        "name": " AMD Ryzen 5 9600X",
+        "price": 218.31,
+        "category": "processor",
+        "description": "The AMD Ryzen 5 9600X is a desktop processor with 6 cores and 12 threads, based on AMD's Zen 5 architecture. It boasts a 5.4 GHz max boost clock, is unlocked for overclocking, and includes a 38 MB cache. It supports DDR5-5600 memory and is designed for the Socket AM5 platform. ",
+        "image": "image\\product\\procssors\\2613900-ryzen-5-9600x-og.avif"
+      }
+      ,
+      {
+        "id": "cpu-6",
+        "name": " AMD Ryzen™ 9 7950X",
+        "price":485.00,
+        "category": "processor",
+        "description": "The AMD Ryzen 9 7950X is a high-end desktop processor featuring 16 cores and 32 threads, designed for demanding tasks like gaming and content creation. It uses AMD's Zen 4 architecture and has a base clock of 4.5 GHz and a max boost clock of 5.7 GHz. ",
+        "image": "image\\product\\procssors\\2505503-ryzen-9-7900x3d-og.avif"
+      }
+    ],
+    "graphics-cards": [
+      {
+        "id": "gpu-1",
+        "name": "NVIDIA RTX 4090",
+        "price": 1599.99,
+        "category": "graphicsCard",
+        "description": "The GeForce RTX 4090 is an enthusiast-class graphics card by NVIDIA, launched on September 20th, 2022. Built on the 5 nm process, and based on the AD102 graphics processor, in its AD102-300-A1 variant, the card supports DirectX 12 Ultimate.",
+        "image": "image\\product\\graphic-cards\\geforce-rtx-4090-jensen.webp"
+      },
+      {
+        "id": "gpu-2",
+        "name": "Nvidia GeForce RTX 5070",
+        "price": 549.00,
+        "category": "graphicsCard",
+        "description": "The NVIDIA GeForce RTX 5070 is a high-performance graphics card, designed for gaming and other demanding applications, with support for DLSS 4 and ray tracing",
+        "image": "image\\product\\graphic-cards\\nvidia_geforce_rtx_50_serisi_cikis_tarihi_ve_ozellikleri_sizdirildi_89df0bf.webp"
+      },
+      {
+        "id": "gpu-3",
+        "name": "AMD Radeon RX 9070",
+        "price": 549,
+        "category": "graphicsCard",
+        "description": "The AMD Radeon RX 9070 is a high-performance graphics card featuring 56 compute units and 16GB of GDDR6 memory, built on the RDNA 4 architecture",
+        "image": "image\\product\\graphic-cards\\AMD-9070-XT.webp"
+      },
+      {
+        "id": "gpu-4",
+        "name": "Nvidia GeForce RTX 4060",
+        "price": 299 ,
+        "category": "graphicsCard",
+        "description": "This GPU is built on a 5nm process, based on the AD107 graphics processor. It also supports DirectX 12 Ultimate, which guarantees support for hardware-raytracing, variable-rate shading and more, in upcoming video games.",
+        "image": "image\\product\\graphic-cards\\src_340x1912xrtx-4060-ti-ozellikleri-sizdi-guc-tuketimi-dusuyor.jpg"
+      },
+      {
+        "id": "gpu-5",
+        "name": "AMD Radeon RX 7600",
+        "price": 270,
+        "category": "graphicsCard",
+        "description": "The AMD Radeon RX 7600 is a mid-range graphics card designed for 1080p gaming and some 1440p gaming, offering a good balance of performance and price. It's based on AMD's RDNA 3 architecture and features second-generation ray tracing accelerators and AI accelerators. ",
+        "image": "image\\product\\graphic-cards\\1163940.avif"
+      },
+      {
+        "id": "gpu-6",
+        "name": "Nvidia GeForce RTX 5080",
+        "price": 999,
+        "category": "graphicsCard",
+        "description": "The GeForce RTX 5080 is an enthusiast-class graphics card by NVIDIA, launched on January 30th, 2025. Built on the 5 nm process, and based on the GB203 graphics processor, in its GB203-400-A1 variant, the card supports DirectX 12 Ultimate. This ensures that all modern games will run on GeForce RTX 5080.",
+        "image": "image\\product\\graphic-cards\\nvidia-geforce-rtx-5080-16-gb-gpu-to-feature-fastest-32-v0-fsbAKKqrlwkWCeFM.webp"
+      }
+      
+    ],
+    "motherboards": [
+      {
+        "id": "mother-board-1",
+        "name": "MSI MPG X870E Carbon WiFi",
+        "price": 499.99,
+        "category": "motherboards",
+        "description": "The MSI MPG X870E CARBON WIFI is a high-performance ATX motherboard designed for gamers and PC enthusiasts. It's powered by the AMD X870E chipset and supports AMD Ryzen 7000/8000/9000 series processors on the AM5 socket. Key features include DDR5 memory support, PCIe 5.0, ultra-fast Wi-Fi 7 connectivity, and a robust 18+2+1 phase power design. ",
+        "image": "image\\product\\mother-boards\\msi-mpg-x870e-carbon-wifi.jpg"
+      },
+      {
+        "id": "mother-board-2",
+        "name": "Asus ROG Crosshair X870E Hero",
+        "price": 688.99,
+        "category": "motherboards",
+        "description": "The ROG Crosshair X870E Hero features five onboard M.2 slots, three of which are PCIe 5.0-ready to offer blistering 16 GB/s speeds, while the others offer still-impressive 8 GB/s over PCIe 4.0 interfaces. It also features a SlimSAS Connector, which supports PCIe 4.0 x4 mode via a transfer cable. ",
+        "image": "image\\product\\mother-boards\\b6759095-cd77-49f8-8cfa-b20f7652333f.webp"
+      },
+      {
+        "id": "mother-board-3",
+        "name": "Asus TUF Gaming Z890-Plus WiFi",
+        "price": 319.99,
+        "category": "motherboards",
+        "description": "The ASUS TUF Gaming Z890-PLUS WIFI is a full-size ATX motherboard designed for the latest Intel Core Ultra 200-S processors, featuring a robust design, good equipment, and efficient cooling. It's known for its durability, solid performance, and game-ready features, making it suitable for demanding gaming and AI applications ",
+        "image": "image\\product\\mother-boards\\asus-tuf-gaming-z890-plus.jpg"
+      },
+      {
+        "id": "mother-board-4",
+        "name": "Asus ROG Maximus Z790 Dark Hero",
+        "price": 784.09,
+        "category": "motherboards",
+        "description": "The ROG Maximus Z790 Dark Hero boasts robust cooling, WiFi 7 and ample PCIe 5.0 slot for unmatched performance, and it offers full compatibility with 14th Gen Intel® Core™ processors. ",
+        "image": "image\\product\\mother-boards\\61qofqL5dJL.jpg"
+      },
+      {
+        "id": "mother-board-5",
+        "name": "MSI MPG Z790I Edge WiFi",
+        "price": 218.65,
+        "category": "motherboards",
+        "description": "The MSI MPG Z790I Edge WiFi is a Mini-ITX motherboard featuring the Intel Z790 chipset and LGA 1700 socket, supporting 12th and 13th gen Intel Core processors. It boasts DDR5 memory, PCIe 5.0, Wi-Fi 6E, and 2.5Gbps LAN for fast speeds. It also includes features like an extended heatsink, 10+1+1 phase VRM power, and 3 M.2 slots. . ",
+        "image": "image\\product\\mother-boards\\MPG-Z790I-EDGE-WIFI-ftr2.webp"
+      },
+      {
+        "id": "mother-board-6",
+        "name": "MSI Pro B660M-A",
+        "price": 229.99,
+        "category": "motherboards",
+        "description": "The MSI PRO B660M-A is a Micro-ATX motherboard designed for Intel 12th generation processors, featuring an LGA 1700 socket. It supports DDR4 RAM and includes features like a Lightning Gen4 M.2 slot with Shield Frozr, and PCIe 4.0 x16 and 3.0 x16 slots. It's a business-oriented board focused on productivity and efficiency.",
+        "image": "image\\product\\mother-boards\\msi_pro_b760ma_wifi_ddr4_lga_1700_microatx_motherboard_ac60093_94675.jpg"
+      }
+    ],
+    "memory": [
+      {
+      "id": "RAM-1",
+      "name": "g.skill trident z5 neo rgb ddr5-6000 (2 x 16GB)",
+      "price": 97.99,
+      "category": "memory",
+      "description": "Trident Z5 Neo RGB DDR5 memory is designed for ultra-high overclocked performance on DDR5-enabled AMD platforms. Featuring AMD EXPO overclocking technology for easy memory overclocking on supported AMD platforms, the Trident Z5 Neo RGB series is the ideal choice for building high-performance systems.",
+      "image": "image\\product\\RAM\\147af29fd8d1248acb5cc2dc1a1e54e9-hi.jpg"
+    },
+    {
+      "id": "RAM-2",
+      "name": "Corsair Vengeance DDR5-5200 (4 x 48GB)",
+      "price":673.99,
+      "category": "memory",
+      "description": "VENGEANCE® RGB 192GB (4x48GB) DDR5 DRAM 5200MT/s CL38 Memory Kit — Black. CORSAIR VENGEANCE RGB DDR5 memory delivers DDR5 performance, higher frequencies, and greater capacities optimized for Intel® motherboards while lighting up your PC with dynamic, individually addressable ten-zone RGB lighting.",
+      "image": "image\\product\\RAM\\CUDIMM_VENGEANCE_Image4.png"
+    },
+    {
+      "id": "RAM-3",
+      "name": "teamGroup T-Force Xtreem ARGB DDR4-3600 (2x8GB)",
+      "price":159.99,
+      "category": "memory",
+      "description": "T-FORCE XTREEM ARGB WHITE's selected high quality IC is tested for total compatibility and reliability, offering a gaming memory with both stability and compatibility. With O.C. Profile support, there's no need to adjust the BIOS manually for either Intel or AMD platform. Easily enjoy overclocking with a single click.",
+      "image": "image\\product\\RAM\\81mGxzTkruL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "RAM-4",
+      "name": "Patriot Viper Steel DDR4-4400 (2 x 8GB)",
+      "price":120.72,
+      "category": "memory",
+      "description": "Built for the latest Intel® and AMD™ platforms, the Viper Steel series provides the best performance and stability for the most demanding computer environments. The Viper Steel utilizes a custom designed high performance aluminum heat shield for a clean sleek steel-look inside any motherboard.",
+      "image": "image\\product\\RAM\\CVHmfkyaWyVHyCwdWTeRiQ.webp"
+    },
+    {
+      "id": "RAM-5",
+      "name": "Patriot Viper Elite 2x16GB DDR4-2400",
+      "price":70.00,
+      "category": "memory",
+      "description": "The Viper Elite DDR4-2400 proves itself an overclocking exception rather than an exceptional overclocker, as it's been over a year since we've tested a kit that couldn't reach DDR4-3466. Then again, it's been even longer since we tested a kit that was rated at only DDR4-2400.",
+      "image": "image\\product\\RAM\\9GBv7jLh5frJjkic9cgJd9.webp"
+    },
+    {
+      "id": "RAM-6",
+      "name": "G.Skill Trident Z Neo DDR4-3600 (2 x 16GB)",
+      "price":82.99,
+      "category": "memory",
+      "description": "Description - Trident Z Neo DDR4-3600 CL18-22-22-42 1.35V 32GB (2x16GB) Engineered and optimized for full compatibility on the latest AMD Ryzen platforms, Trident Z Neo brings unparalleled memory performance and vibrant RGB lighting to any gaming PC or workstation with latest AMD Ryzen CPUs and AMD DDR4 motherboards. !",
+      "image": "image\\product\\RAM\\title.webp"
+    }
+    
+    
+  ],
+    "storage": [
+      {
+        "id": "storage-1",
+        "name": "Samsung 990 Pro",
+        "price":169.99 ,
+        "category": "storage",
+        "description": "The Samsung 990 PRO is a high-performance PCIe 4.0 NVMe SSD designed for gaming, demanding workloads, and professional applications. It offers ultra-fast sequential read/write speeds (up to 7,450/6,900 MB/s) and is optimized for power efficiency and thermal control. ",
+        "image": "image\\product\\storage\\01_990_OF_PC_overview.webp"
+      },
+      {
+        "id": "storage-2",
+        "name": "WD Black SN850X",
+        "price":93.99,
+        "category": "storage",
+        "description": "This gaming drive is built for top-tier performance, with advanced features like 7,300MB/s(2) speeds (8TB models), a heatsink option to maintain performance, and the downloadable WD_BLACK Dashboard (Windows only), which automatically turns on Game Mode 2.0.",
+        "image": "image\\product\\storage\\WD_BLACK-SN850X-hero.webp"
+      },
+      {
+        "id": "storage-3",
+        "name": "Crucial T705",
+        "price":159.99,
+        "category": "storage",
+        "description": "With blistering sequential reads and writes2 up to 14,500/12,700MB/s, the Crucial T705 outpaces, outperforms, and outshines yesterday's fastest SSDs. The T705 maximizes Gen5 technology with nearly 2x the performance5 of Gen4 SSDs without significantly increasing power consumption.",
+        "image": "image\\product\\storage\\x4obmY2apPP4x9iF5jnvqG-1200-80.webp"
+      },
+      {
+        "id": "storage-4",
+        "name": "Sabrent Rocket 5",
+        "price":170.99,
+        "category": "storage",
+        "description": "The Rocket 5 is rated for sequential read speeds of up to 13,000 MB/s and 9,500 MB/s write; random IO reaches 1300K IOPS for read and 1400K for writes. At its launch, the SSD was priced at 190 USD. The warranty length is set to five years, which is an excellent warranty period.",
+        "image": "image\\product\\storage\\Sabrent-NVMe-M.2-Gen-5-internal-Solid-State-Drive.webp"
+      },
+      {
+        "id": "storage-5",
+        "name": " Teamgroup MP44 SSD",
+        "price":69.99,
+        "category": "storage",
+        "description": "MP44 M. 2 PCIe 4.0 SSD features a maximum capacity of 8TB, offering all-encompassing storage for documents, pictures, videos, games and all kinds of data on the computer.",
+        "image": "image\\product\\storage\\f91d76d3-fba3-4c33-8018-4af05966abeb.__CR0,0,600,450_PT0_SX600_V1___.webp"
+      },
+      {
+        "id": "storage-6",
+        "name": " Kingston KC3000",
+        "price":153.85,
+        "category": "storage",
+        "description": "Kingston KC3000 PCIe 4.0 NVMe M. 2 SSD delivers intense speeds up to 7,000MB/s for high-performance desktops and laptops using the latest Gen 4x4 NVMe controller and 3D TLC NAND.",
+        "image": "image\\product\\storage\\495_2025_3732_WhatsApp_Image_2025-01-13_at_9.50.15_PM.webp"
+      }
+    ]
+  }
+  

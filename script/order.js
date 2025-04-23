@@ -1,32 +1,25 @@
-// Product data
-const products = {
-    processors: [
-        {
-            id: 'cpu-1',
-            name: 'Intel Core i9-13900K',
-            price: 589.99,
-            category: 'processor',
-            description: '24 cores, 5.8GHz max frequency',
-            image: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=300&q=80'
-        },
-        // ... (rest of the processors data)
-    ],
-    graphicsCards: [
-        {
-            id: 'gpu-1',
-            name: 'NVIDIA RTX 4090',
-            price: 1599.99,
-            category: 'graphicsCard',
-            description: '24GB GDDR6X',
-            image: 'https://images.unsplash.com/photo-1591405351990-4726e331f141?auto=format&fit=crop&w=300&q=80'
-        },
-        // ... (rest of the graphics cards data)
-    ],
-    // ... (rest of the categories)
-};
-
+let products = {}; // will be filled from JSON
 // Cart state
 let cart = [];
+const savedCart = localStorage.getItem('cart');
+if (savedCart) {
+    cart = JSON.parse(savedCart);
+}
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('script/product.json') // Update path accordingly
+      .then(res => res.json())
+      .then(data => {
+        products = data;
+        initializePage();
+      })
+      .catch(err => console.error('Failed to load products:', err));
+  });
+
+
+
 
 // DOM Elements
 const checkoutBtn = document.getElementById('checkout-btn');
@@ -47,12 +40,7 @@ function initializePage() {
         }
     });
 
-    // Load cart from localStorage if exists
-    const savedCart = localStorage.getItem('cart');
-    if (savedCart) {
-        cart = JSON.parse(savedCart);
-        updateCartDisplay();
-    }
+   
 }
 
 // Create product card
@@ -167,11 +155,21 @@ function saveFavorites() {
 function loadFavorites() {
     const favorites = localStorage.getItem('favorites');
     if (favorites) {
-        cart = JSON.parse(favorites);
+        const favoriteItems = JSON.parse(favorites);
+
+        // Merge favorites with current cart
+        favoriteItems.forEach(favItem => {
+            const existingItem = cart.find(item => item.product.id === favItem.product.id);
+            if (existingItem) {
+                existingItem.quantity += favItem.quantity;
+            } else {
+                cart.push(favItem);
+            }
+        });
+        localStorage.setItem('cart', JSON.stringify(cart));
         updateCartDisplay();
-        alert('Favorites loaded to cart!');
-    }
-}
+        alert('Favorites added to cart!');
+}}
 
 // Event listeners
 checkoutBtn.addEventListener('click', () => {
@@ -181,5 +179,3 @@ checkoutBtn.addEventListener('click', () => {
 saveFavoritesBtn.addEventListener('click', saveFavorites);
 loadFavoritesBtn.addEventListener('click', loadFavorites);
 
-// Initialize the page when DOM is loaded
-document.addEventListener('DOMContentLoaded', initializePage);

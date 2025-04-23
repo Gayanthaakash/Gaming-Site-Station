@@ -5,6 +5,8 @@ if (savedCart) {
     cart = JSON.parse(savedCart);
 }
 
+
+
 // DOM Elements
 const orderItemsContainer = document.getElementById('order-items');
 const orderTotalElement = document.getElementById('order-total');
@@ -83,22 +85,28 @@ checkoutForm.addEventListener('submit', (e) => {
     loadingButton.disabled = true;
 
     setTimeout(() => {
-        // Clear cart from localStorage
-        localStorage.removeItem('cart');
-
-        // Show success message and redirect
-        alert('Payment successful! Thank you for your purchase.');
-        
-        // Calculate delivery date (3 business days from now)
+       
+    
+        // Calculate delivery date (7 days from now)
         const deliveryDate = new Date();
-        deliveryDate.setDate(deliveryDate.getDate() + 3);
-        
+        deliveryDate.setDate(deliveryDate.getDate() + 7);
+        const formattedDate = deliveryDate.toLocaleDateString(undefined, {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    
         // Store delivery date in localStorage for the confirmation page
         localStorage.setItem('deliveryDate', deliveryDate.toISOString());
-        
+    
+        // Show success message with delivery date and redirect
+        alert(`Payment successful! Thank you for your purchase. Your order will be delivered by ${formattedDate}.`);
+    
         // Redirect to confirmation page
         window.location.href = 'order.html';
     }, 2000);
+    
 });
 
 // Initialize the page when DOM is loaded
