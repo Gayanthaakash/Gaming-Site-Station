@@ -81,6 +81,13 @@ nav {
   nav a:hover {
     color: #2da2f1;
   }
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
   
   
 
@@ -323,15 +330,7 @@ h1 {
 .favorites-btn:hover {
     background-color: #8e44ad;
 }
-.hamburger {
-    display: none; /* Hidden by default for desktop */
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
-    position: absolute; /* Use absolute positioning */
-    right: 1.5rem; /* Align to the right with padding */
-    top: 1.5rem; /* Align vertically within the header */
-  }
+
 
 /* Responsive design */
 @media (max-width: 768px) {
